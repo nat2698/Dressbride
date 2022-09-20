@@ -1,0 +1,328 @@
+.contenido-principal{
+    background: #fff;
+}
+
+.contenido{
+  
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: rgb(253, 242, 191);
+    clip-path: polygon(100% 76%, 51% 100%, 0 77%, 0 0, 100% 0);
+}
+
+
+
+
+.imagen-novia{
+    margin-top: -250px;
+    margin-left: 650px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.imagen-novia img{
+    display: flex;    
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+}
+
+.titulo{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family:'Dancing Script', cursive;
+    font-weight: 100;
+    width: 60%;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 300px ;
+    font-size: 50px;   
+}
+
+/* CONTENIDO-2 */
+.contenido-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.contenido-texto{
+    padding: 30px;
+    width: 50%;
+    height: 500px;
+    color: #000;
+    background: rgb(253, 242, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px; 
+}
+
+.contenido-texto h2{
+    font-family:'Dancing Script', cursive;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.contenido-texto p{
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* CONTENIDO-3 */
+.contenido-3{
+    width: 100%;
+    height: 140vh;
+    border-bottom: 2px solid #fff;
+    padding: 100px;
+    background: rgb(253, 242, 191);
+    clip-path: polygon(49% 10%, 100% 0, 100% 67%, 51% 100%, 48% 100%, 0 67%, 0 0);
+}
+
+.titulo-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-3 h4 {
+    font-family:'Dancing Script', cursive;
+    color:#333; 
+    margin-top:20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container-grid-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap:30px;
+    width: 100%;
+    height: 100%;
+    margin:auto;  
+} 
+
+.card{
+    padding:8px;
+    background: rgb(245, 245, 225);
+    margin: auto;
+    transition: all .3s ease;
+    border-radius: 15px;
+    box-shadow: -3px 6px 40px -12px rgba(0,0,0,0.75);
+}
+
+.img-card {
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.img-card2{
+    width: 100px;
+    height: 700px;
+    padding:10px;
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 10px 18px 21px -10px rgba(0,0,0,0.75);
+    transform: scale(1.2);
+    
+
+}
+
+.card p{
+    margin-left: 75px;
+}
+
+
+
+/* CONTENIDO-4 */
+.contenido-4{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.titulo-h5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.titulo-h5 h5{
+    font-family:'Dancing Script', cursive;
+    color:#333; 
+    margin-top:20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card3{
+    background-color:rgb(252, 246, 219) ;
+
+}
+
+.card3 p{
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px){
+    .contenido-principal{
+        width: 100%;
+        background: #fff;
+    }
+    .contenido{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        background: rgb(253, 242, 191);
+        clip-path: polygon(100% 76%, 51% 100%, 0 77%, 0 0, 100% 0);
+        
+    }
+
+    .imagen-novia{
+        margin-top:-100px;
+        margin-left:1px;
+       padding:0px;
+        width: 50%;
+        height: 350px;
+        display: flex;
+        justify-content: start;
+        
+        
+       
+    }
+
+    .imagen-novia img{        
+        width: 250px;
+        height: 350px;
+        z-index: 150000;
+        background: transparent;
+        
+    }
+
+    .titulo{
+        margin-top:-70px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-family:'Dancing Script', cursive;
+        font-weight: 100;
+        width: 60%;
+        height: 50px;
+        margin-top: -50px;
+        margin-left:30px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* CONTENIDO-2 */
+    
+    .contenido-texto{
+        padding: 30px;
+        width: 75%;
+        height: 600px;
+        color: #000;
+        background: rgb(253, 242, 191);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 18px;
+    }
+
+    /* CONTENIDO-3 */
+    
+    .contenido-3{
+        width: 100%;
+        height: 300vh;
+        /*  */
+        background: rgb(253, 242, 191);
+        clip-path: polygon(49% 9%, 100% 0, 100% 81%, 78% 100%, 0 100%, 0 0);
+        
+    }
+    
+    .titulo-3{
+        padding-top: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 30px;
+    }
+    
+    
+    
+    .titulo-3 h4 {
+        margin-left: 75px;
+        font-family:'Dancing Script', cursive;
+        color:#333; 
+        margin-top:20px;
+        
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .container-grid-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 300px;
+        padding-left: 40px;
+        padding-right: 40px;
+        gap:30px;
+        width: 100%;
+        height: 100%;
+        margin:auto; 
+    } 
+
+    .card:hover{
+        box-shadow: 10px 18px 21px -10px rgba(0,0,0,0.75);
+        transform: scale(1.1);
+    }
+
+    .contenido-4{
+        border-left: 1px solid rgb(247, 245, 158);
+        padding-top: 100px;
+        width: 100%;
+        height: 190vh;
+       
+        clip-path: polygon(0 0, 100% 0, 85% 17%, 100% 36%, 87% 54%, 100% 76%, 85% 100%, 0 100%);    }
+
+}
